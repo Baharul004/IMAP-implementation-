@@ -1,12 +1,15 @@
 package main.imapserver.message;
 
 public class DraftMessage {
+	/**
+	 * Create Draft email with getter and setter
+	 */
 	String subject;
 	String msg;
 	String To;
 	String From;
 	String date;
-	// String msg;
+
 	boolean seen;
 
 	public String getTo() {
@@ -35,6 +38,9 @@ public class DraftMessage {
 
 	boolean delete;
 
+	/**
+	 * Draft Email details for getting value
+	 */
 	public DraftMessage(String to, String date, String from, String subject, String msg, boolean seen, boolean delete) {
 		super();
 		this.To = to;
@@ -81,7 +87,7 @@ public class DraftMessage {
 	@Override
 	public String toString() {
 		return "DraftMessage [to=" + To + ", date=" + date + ", from=" + From + ", subject=" + subject + ", msg=" + msg
-				+ ", seen=" + seen + "]";
+				+ "]";
 	}
 
 }
