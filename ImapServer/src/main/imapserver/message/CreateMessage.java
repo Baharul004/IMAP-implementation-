@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CreateMessage {
+	/**
+	 * ArrayList for EMAIL
+	 */
 	List<Message> messages = new ArrayList<>();
 
 	public List<Message> getMessages() {
@@ -14,6 +17,9 @@ public class CreateMessage {
 		this.messages = messages;
 	}
 
+	/**
+	 * Client Static message in Server for Client
+	 */
 	public void createMessage() {
 		Message msg1 = new Message("aa@gmail.com", "10.12.2018", "aa@gmail.com", "Header 1", "hello message 1", true,
 				false);
@@ -25,6 +31,9 @@ public class CreateMessage {
 				false);
 		Message msg5 = new Message("ee@gmail.com", "10.16.2018", "ae@gmail.com", "Header 5", "hello message 5", false,
 				false);
+		/**
+		 * Add Email in List
+		 */
 		messages.add(msg1);
 		messages.add(msg2);
 		messages.add(msg3);
