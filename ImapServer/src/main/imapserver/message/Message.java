@@ -1,12 +1,15 @@
 package main.imapserver.message;
 
 public class Message {
+	/**
+	 * Email details with getter and Setter
+	 */
 	String subject;
 	String msg;
 	String To;
 	String From;
 	String date;
-	// String msg;
+
 	boolean seen;
 
 	public String getTo() {
@@ -35,6 +38,9 @@ public class Message {
 
 	boolean delete;
 
+	/**
+	 * Email details for getting value
+	 */
 	public Message(String to, String date, String from, String subject, String msg, boolean seen, boolean delete) {
 		super();
 		this.To = to;
